@@ -1,0 +1,46 @@
+#third {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    color: rgb(250, 250, 250);
+    font-family: "Segoe Script", sans-serif; /* Added a backup font */
+}
+
+#mod {
+    display: inline;
+    position: absolute;
+    right: 50px;
+}
+
+audio {
+    position: relative; /* Changed from fixed to relative */
+    margin-top: 28px;
+    width: 90%;
+}
+
+label {
+    font-family: "Segoe Script", sans-serif; /* Added a backup font */
+}
+
+#emoji {
+    width: 75px;
+    height: 75px;
+    display: inline-grid;
+    border-color: rgba(1, 1, 1, 0.5);
+    background: transparent url("next.png");
+    background-size: cover;
+    border-radius: 50%; /* Simplified border-radius */
+}
+
+#xyz {
+    display: inline;
+    position: absolute;
+    /* Add more styles as needed */
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>musical Arena</title>
+<script type="text/javascript" src="/eel.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your CSS file -->
+<style>
+/* Inline styles for body */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif; /* Default font */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+/* Styles for the header */
+#first {
+    background-color: #34495e; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Top and bottom padding */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+/* Styles for the queue section */
+#queue {
+    background-color: #fff; /* White background color */
+    color: #333; /* Text color */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+#next {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circle button */
+    padding: 10px; /* Padding */
+    margin-left: 10px; /* Add space between button and text */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Styles for the main content section */
+#third {
+    background-color: #fff; /* White background color */
+    padding: 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Styles for audio player */
+#audio-player {
+    width: 100%; /* Full width */
+}
+
+</style>
+</head>
+<body>
+<div id="first">
+    <h1>Music Player</h1>
+</div>
+
+<div id="queue">
+    <span>Queue</span>
+    <input type="button" id="next" onclick="nextsong()" value="Next"> <!-- Modified button with text -->
+    <hr>
+</div>
+
+<div id="third">
+    <div id="emoji"></div>
+    <div id="xyz">Playing: <label id="sname">none</label></div>
+    <div id="mod">
+        Mode: 
+        <input type="radio" name="mode" checked="checked" onclick="setmod(this)" value="1"> Queue Mode &nbsp;
+        <input type="radio" name="mode" onclick="setmod(this)" value="2"> Emotion Mode &nbsp;
+        <input type="radio" name="mode" onclick="setmod(this)" value="3"> Random Mode
+    </div>
+    <audio controls id="audio-player">
+        <source id="sel" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<script src="code.js"></script> <!-- JavaScript file -->
+</body>
+</html>

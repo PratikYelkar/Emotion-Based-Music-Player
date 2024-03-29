@@ -1,0 +1,30 @@
+/* Header Styles */
+#first {
+    width: 100%; /* Adjusted to fill the entire width */
+    height: 50px;
+    background-color: rgba(44, 62, 80, 0.8);
+    position: fixed;
+    padding: 10px 20px; /* Adjusted padding */
+    top: 0;
+    left: 0; /* Changed to 'left' for consistency */
+}
+
+/* Queue Styles */
+#queue {
+    color: white;
+    font-size: 20px;
+    font-family: "Segoe Script", cursive; /* Added backup font */
+    margin-top: 20px; /* Adjusted margin */
+    margin-right: auto; /* Center horizontally */
+    margin-left: auto; /* Center horizontally */
+    width: 300px; /* Increased width for better readability */
+    max-height: 400px; /* Limit height for overflow */
+    background-color: rgba(0, 0, 0, 0.9); /* Improved readability */
+    border-radius: 10px; /* Simplified border radius */
+    position: absolute;
+    top: 60px; /* Adjusted top position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1; /* Raised above other content */
+    overflow-y: auto; /* Added overflow for vertical scrolling */
+}
